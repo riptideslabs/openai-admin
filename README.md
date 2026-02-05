@@ -31,6 +31,22 @@ go build -o openai-admin .
 
 ## Commands
 
+### Organizations
+
+List organizations (the first returned is treated as the default):
+
+```bash
+openai-admin organizations list
+```
+
+### Projects
+
+List projects:
+
+```bash
+openai-admin projects list
+```
+
 ### Admin API keys
 
 List all admin API keys (auto-paginates) with columnized output:
