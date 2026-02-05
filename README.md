@@ -7,7 +7,7 @@ Small CLI for OpenAI organization administration tasks.
 
 - Go installed (see `go.mod` for the target version)
 - Environment variables:
-	- `OPENAI_API_KEY` (required)
+	- `OPENAI_API_KEY` (required; must be an **Admin API key** for these org admin endpoints, see https://platform.openai.com/settings/organization/admin-keys)
 	- `OPENAI_BASE_URL` (optional; override API base URL)
 	- `OPENAI_ORG_ID` (optional)
 	- `OPENAI_PROJECT_ID` (optional)
@@ -17,7 +17,9 @@ Small CLI for OpenAI organization administration tasks.
 Run directly:
 
 ```bash
-go run . --help
+git clone https://github.com/riptideslabs/openai-admin.git
+cd openai-admin
+go run .
 ```
 
 Or build a binary:
