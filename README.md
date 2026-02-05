@@ -36,25 +36,25 @@ go build -o openai-admin .
 List all admin API keys (auto-paginates) with columnized output:
 
 ```bash
-go run . admin-keys list
+openai-admin admin-keys list
 ```
 
 Create an admin API key (prints the one-time key value only):
 
 ```bash
-go run . admin-keys create --name "Main Admin Key"
+openai-admin admin-keys create --name "Main Admin Key"
 ```
 
 Create and copy the one-time key value to clipboard (macOS):
 
 ```bash
-go run . admin-keys create --name "Main Admin Key" | pbcopy
+openai-admin admin-keys create --name "Main Admin Key" | pbcopy
 ```
 
 Delete an admin API key by id:
 
 ```bash
-go run . admin-keys delete key_abc
+openai-admin admin-keys delete key_abc
 ```
 
 ## Notes
