@@ -47,6 +47,20 @@ List projects:
 openai-admin projects list
 ```
 
+### Project API keys
+
+List project API keys (uses `--project-id` or `OPENAI_PROJECT_ID`, auto-paginates):
+
+```bash
+openai-admin projects api-keys list --project-id proj_abc
+```
+
+Delete a project API key by id:
+
+```bash
+openai-admin projects api-keys delete key_abc --project-id proj_abc
+```
+
 ### Admin API keys
 
 List all admin API keys (auto-paginates) with columnized output:
